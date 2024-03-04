@@ -17,18 +17,18 @@
  */
 package org.apache.ratis.grpc.util;
 
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
-import org.apache.ratis.thirdparty.com.google.protobuf.CodedInputStream;
-import org.apache.ratis.thirdparty.com.google.protobuf.InvalidProtocolBufferException;
-import org.apache.ratis.thirdparty.com.google.protobuf.MessageLite;
-import org.apache.ratis.thirdparty.com.google.protobuf.Parser;
-import org.apache.ratis.thirdparty.com.google.protobuf.UnsafeByteOperations;
-import org.apache.ratis.thirdparty.io.grpc.Detachable;
-import org.apache.ratis.thirdparty.io.grpc.HasByteBuffer;
-import org.apache.ratis.thirdparty.io.grpc.KnownLength;
-import org.apache.ratis.thirdparty.io.grpc.MethodDescriptor.PrototypeMarshaller;
-import org.apache.ratis.thirdparty.io.grpc.Status;
-import org.apache.ratis.thirdparty.io.grpc.protobuf.lite.ProtoLiteUtils;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.CodedInputStream;
+import com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.MessageLite;
+import com.google.protobuf.Parser;
+import com.google.protobuf.UnsafeByteOperations;
+import io.grpc.Detachable;
+import io.grpc.HasByteBuffer;
+import io.grpc.KnownLength;
+import io.grpc.MethodDescriptor.PrototypeMarshaller;
+import io.grpc.Status;
+import io.grpc.protobuf.lite.ProtoLiteUtils;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.Preconditions;
 import org.slf4j.Logger;

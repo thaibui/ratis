@@ -25,7 +25,7 @@ import org.apache.ratis.protocol.ClientId;
 import org.apache.ratis.protocol.RaftClientRequest;
 import org.apache.ratis.protocol.RaftGroupId;
 import org.apache.ratis.protocol.RaftPeerId;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.SizeInBytes;
 import org.apache.ratis.util.TimeDuration;
 import org.apache.ratis.util.Timestamp;

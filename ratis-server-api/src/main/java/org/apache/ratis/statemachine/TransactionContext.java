@@ -21,7 +21,7 @@ import org.apache.ratis.proto.RaftProtos.LogEntryProto;
 import org.apache.ratis.proto.RaftProtos.RaftPeerRole;
 import org.apache.ratis.proto.RaftProtos.StateMachineLogEntryProto;
 import org.apache.ratis.protocol.RaftClientRequest;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.Preconditions;
 import org.apache.ratis.util.ReferenceCountedObject;
 import org.apache.ratis.util.ReflectionUtils;

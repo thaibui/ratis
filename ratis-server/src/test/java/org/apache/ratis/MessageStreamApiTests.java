@@ -28,7 +28,7 @@ import org.apache.ratis.server.RaftServer;
 import org.apache.ratis.server.impl.MiniRaftCluster;
 import org.apache.ratis.statemachine.impl.SimpleStateMachine4Testing;
 import org.apache.ratis.statemachine.StateMachine;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.Slf4jUtils;
 import org.apache.ratis.util.SizeInBytes;
 import org.junit.Assert;

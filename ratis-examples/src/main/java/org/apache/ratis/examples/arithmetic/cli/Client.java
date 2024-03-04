@@ -25,7 +25,7 @@ import org.apache.ratis.grpc.GrpcFactory;
 import org.apache.ratis.protocol.ClientId;
 import org.apache.ratis.protocol.RaftGroup;
 import org.apache.ratis.protocol.RaftGroupId;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 
 import java.io.IOException;
 

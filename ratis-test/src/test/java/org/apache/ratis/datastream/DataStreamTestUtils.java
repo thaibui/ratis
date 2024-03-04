@@ -45,7 +45,7 @@ import org.apache.ratis.statemachine.StateMachine.DataChannel;
 import org.apache.ratis.statemachine.StateMachine.DataStream;
 import org.apache.ratis.statemachine.TransactionContext;
 import org.apache.ratis.statemachine.impl.BaseStateMachine;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.CollectionUtils;
 import org.apache.ratis.util.FileUtils;
 import org.apache.ratis.util.JavaUtils;

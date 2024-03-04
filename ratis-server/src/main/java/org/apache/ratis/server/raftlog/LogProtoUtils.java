@@ -25,9 +25,9 @@ import org.apache.ratis.protocol.RaftPeer;
 import org.apache.ratis.server.RaftConfiguration;
 import org.apache.ratis.server.impl.ServerImplUtils;
 import org.apache.ratis.server.protocol.TermIndex;
-import org.apache.ratis.thirdparty.com.google.protobuf.AbstractMessage;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
-import org.apache.ratis.thirdparty.com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.AbstractMessage;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.InvalidProtocolBufferException;
 import org.apache.ratis.util.Preconditions;
 import org.apache.ratis.util.ProtoUtils;
 

@@ -103,35 +103,6 @@
         </executions>
       </plugin>
       <!-- Modify the generated source to use our shaded protobuf -->
-      <plugin>
-        <groupId>com.google.code.maven-replacer-plugin</groupId>
-        <artifactId>replacer</artifactId>
-        <version>1.5.3</version>
-        <executions>
-          <execution>
-            <phase>process-sources</phase>
-            <goals>
-              <goal>replace</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <basedir>${project.build.directory}/generated-sources</basedir>
-          <includes>
-              <include>**/*.java</include>
-          </includes>
-          <replacements>
-            <replacement>
-              <token>([^\.])com.google</token>
-              <value>$1org.apache.ratis.thirdparty.com.google</value>
-            </replacement>
-            <replacement>
-              <token>([^\.])io.grpc</token>
-              <value>$1org.apache.ratis.thirdparty.io.grpc</value>
-            </replacement>
-          </replacements>
-        </configuration>
-      </plugin>
     </plugins>
     <pluginManagement>
       <plugins>

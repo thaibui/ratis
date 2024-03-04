@@ -18,7 +18,7 @@
 package org.apache.ratis.server.raftlog.segmented;
 
 import org.apache.ratis.proto.RaftProtos.LogEntryProto;
-import org.apache.ratis.thirdparty.com.google.protobuf.CodedOutputStream;
+import com.google.protobuf.CodedOutputStream;
 import org.apache.ratis.util.IOUtils;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.Preconditions;

@@ -18,10 +18,10 @@
 
 package org.apache.ratis.grpc.metrics.intercept.server;
 
-import org.apache.ratis.thirdparty.io.grpc.Metadata;
-import org.apache.ratis.thirdparty.io.grpc.Status;
-import org.apache.ratis.thirdparty.io.grpc.ForwardingServerCall;
-import org.apache.ratis.thirdparty.io.grpc.ServerCall;
+import io.grpc.Metadata;
+import io.grpc.Status;
+import io.grpc.ForwardingServerCall;
+import io.grpc.ServerCall;
 import org.apache.ratis.grpc.metrics.MessageMetrics;
 
 class MetricServerCall<R,S> extends ForwardingServerCall.SimpleForwardingServerCall<R,S> {

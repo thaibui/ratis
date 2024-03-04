@@ -75,8 +75,8 @@ import org.apache.ratis.protocol.exceptions.ReadIndexException;
 import org.apache.ratis.protocol.exceptions.StateMachineException;
 import org.apache.ratis.protocol.exceptions.TransferLeadershipException;
 import org.apache.ratis.rpc.CallId;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
-import org.apache.ratis.thirdparty.com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.InvalidProtocolBufferException;
 import org.apache.ratis.util.ProtoUtils;
 import org.apache.ratis.util.ReflectionUtils;
 

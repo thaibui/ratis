@@ -43,7 +43,7 @@ import org.apache.ratis.rpc.CallId;
 import io.netty.buffer.ByteBuf;
 import org.apache.ratis.util.IOUtils;
 import org.apache.ratis.protocol.*;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.MemoizedSupplier;
 import org.apache.ratis.util.Preconditions;

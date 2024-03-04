@@ -209,6 +209,9 @@
 
     <!-- Contains all shaded thirdparty dependencies -->
     <ratis.thirdparty.version>1.0.5</ratis.thirdparty.version>
+    <shaded.netty.version>4.1.100.Final</shaded.netty.version>
+    <shaded.grpc.version>1.58.0</shaded.grpc.version>
+    <shaded.protobuf.version>3.24.4</shaded.protobuf.version>
 
     <!-- Need these for the protobuf compiler. *MUST* match what is in ratis-thirdparty -->
     <shaded.protobuf.version>3.24.4</shaded.protobuf.version>
@@ -225,8 +228,72 @@
     <jacoco.version>0.8.11</jacoco.version>
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java</artifactId>
+      <version>${shaded.protobuf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java-util</artifactId>
+      <version>${shaded.protobuf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-netty</artifactId>
+      <version>${shaded.grpc.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-protobuf</artifactId>
+      <version>${shaded.grpc.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-stub</artifactId>
+      <version>${shaded.grpc.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-context</artifactId>
+      <version>${shaded.grpc.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-resolver-dns-native-macos</artifactId>
+      <classifier>osx-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-epoll</artifactId>
+      <classifier>linux-aarch_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-epoll</artifactId>
+      <classifier>linux-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-kqueue</artifactId>
+      <classifier>osx-x86_64</classifier>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-tcnative-boringssl-static</artifactId>
+    </dependency>
+  </dependencies>
+
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-bom</artifactId>
+        <version>${shaded.netty.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <!-- Internal dependencies -->
       <dependency>
         <artifactId>ratis-docs</artifactId>

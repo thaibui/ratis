@@ -19,7 +19,7 @@ package org.apache.ratis.util;
 
 import org.apache.ratis.thirdparty.com.google.common.collect.Interner;
 import org.apache.ratis.thirdparty.com.google.common.collect.Interners;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.function.StringSupplier;
 
 import java.io.PrintWriter;

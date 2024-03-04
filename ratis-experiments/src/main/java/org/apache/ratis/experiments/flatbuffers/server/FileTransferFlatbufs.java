@@ -19,11 +19,11 @@
 package org.apache.ratis.experiments.flatbuffers.server;
 
 import org.apache.ratis.thirdparty.com.google.flatbuffers.FlatBufferBuilder;
-import org.apache.ratis.thirdparty.io.grpc.Status;
+import io.grpc.Status;
 import org.apache.ratis.flatbufs.FileTransferGrpc;
 import org.apache.ratis.flatbufs.TransferMsg;
 import org.apache.ratis.flatbufs.TransferReply;
-import org.apache.ratis.thirdparty.io.grpc.stub.StreamObserver;
+import io.grpc.stub.StreamObserver;
 
 /**
  * Server code responding to messages of flatbuffer based Client.

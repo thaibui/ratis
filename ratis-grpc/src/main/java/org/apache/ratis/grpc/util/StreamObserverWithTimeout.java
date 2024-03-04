@@ -18,8 +18,8 @@
 package org.apache.ratis.grpc.util;
 
 import org.apache.ratis.protocol.exceptions.TimeoutIOException;
-import org.apache.ratis.thirdparty.io.grpc.ClientInterceptor;
-import org.apache.ratis.thirdparty.io.grpc.stub.StreamObserver;
+import io.grpc.ClientInterceptor;
+import io.grpc.stub.StreamObserver;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.ResourceSemaphore;
 import org.apache.ratis.util.TimeDuration;

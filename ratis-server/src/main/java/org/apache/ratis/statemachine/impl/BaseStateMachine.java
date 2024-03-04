@@ -32,7 +32,7 @@ import org.apache.ratis.statemachine.SnapshotRetentionPolicy;
 import org.apache.ratis.statemachine.StateMachine;
 import org.apache.ratis.statemachine.StateMachineStorage;
 import org.apache.ratis.statemachine.TransactionContext;
-import org.apache.ratis.thirdparty.com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.InvalidProtocolBufferException;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.LifeCycle;
 import org.apache.ratis.util.Preconditions;

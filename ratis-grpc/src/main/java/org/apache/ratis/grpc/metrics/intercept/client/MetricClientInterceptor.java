@@ -19,7 +19,7 @@
 package org.apache.ratis.grpc.metrics.intercept.client;
 
 import org.apache.ratis.grpc.metrics.MessageMetrics;
-import org.apache.ratis.thirdparty.io.grpc.*;
+import io.grpc.*;
 
 import java.io.Closeable;
 

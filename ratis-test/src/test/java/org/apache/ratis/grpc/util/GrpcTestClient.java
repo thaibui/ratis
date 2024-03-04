@@ -21,10 +21,10 @@ import org.apache.ratis.test.proto.GreeterGrpc;
 import org.apache.ratis.test.proto.GreeterGrpc.GreeterStub;
 import org.apache.ratis.test.proto.HelloReply;
 import org.apache.ratis.test.proto.HelloRequest;
-import org.apache.ratis.thirdparty.io.grpc.Deadline;
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannel;
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannelBuilder;
-import org.apache.ratis.thirdparty.io.grpc.stub.StreamObserver;
+import io.grpc.Deadline;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
+import io.grpc.stub.StreamObserver;
 import org.apache.ratis.util.IOUtils;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.TimeDuration;
@@ -105,7 +105,7 @@ class GrpcTestClient implements Closeable {
   public void close() throws IOException {
     try {
       /* After the request handler is cancelled, no more life-cycle hooks are allowed,
-       * see {@link org.apache.ratis.thirdparty.io.grpc.ClientCall.Listener#cancel(String, Throwable)} */
+       * see {@link io.grpc.ClientCall.Listener#cancel(String, Throwable)} */
       // requestHandler.onCompleted();
       channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     } catch (InterruptedException e) {

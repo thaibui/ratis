@@ -17,7 +17,7 @@
  */
 package org.apache.ratis.protocol;
 
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 
 import java.util.UUID;
 

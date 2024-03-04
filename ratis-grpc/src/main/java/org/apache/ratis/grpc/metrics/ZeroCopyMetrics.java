@@ -22,7 +22,7 @@ import org.apache.ratis.metrics.MetricRegistryInfo;
 import org.apache.ratis.metrics.RatisMetricRegistry;
 import org.apache.ratis.metrics.RatisMetrics;
 import org.apache.ratis.thirdparty.com.google.common.annotations.VisibleForTesting;
-import org.apache.ratis.thirdparty.com.google.protobuf.AbstractMessage;
+import com.google.protobuf.AbstractMessage;
 
 public class ZeroCopyMetrics extends RatisMetrics {
   private static final String RATIS_GRPC_METRICS_APP_NAME = "ratis_grpc";

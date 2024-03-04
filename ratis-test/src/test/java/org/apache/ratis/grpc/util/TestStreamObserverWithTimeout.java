@@ -19,7 +19,7 @@ package org.apache.ratis.grpc.util;
 
 import org.apache.ratis.BaseTest;
 import org.apache.ratis.grpc.util.GrpcTestClient.StreamObserverFactory;
-import org.apache.ratis.thirdparty.io.grpc.StatusRuntimeException;
+import io.grpc.StatusRuntimeException;
 import org.apache.ratis.util.NetUtils;
 import org.apache.ratis.util.Slf4jUtils;
 import org.apache.ratis.util.StringUtils;

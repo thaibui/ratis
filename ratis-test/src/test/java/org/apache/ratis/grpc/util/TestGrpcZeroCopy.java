@@ -18,10 +18,10 @@
 package org.apache.ratis.grpc.util;
 
 import org.apache.ratis.BaseTest;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
-import org.apache.ratis.thirdparty.com.google.protobuf.MessageLite;
-import org.apache.ratis.thirdparty.com.google.protobuf.UnsafeByteOperations;
-import org.apache.ratis.thirdparty.io.grpc.KnownLength;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.MessageLite;
+import com.google.protobuf.UnsafeByteOperations;
+import io.grpc.KnownLength;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.PooledByteBufAllocator;
 import org.apache.ratis.util.NetUtils;

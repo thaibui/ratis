@@ -96,7 +96,7 @@ import org.apache.ratis.statemachine.StateMachine;
 import org.apache.ratis.statemachine.TransactionContext;
 import org.apache.ratis.statemachine.impl.TransactionContextImpl;
 import org.apache.ratis.thirdparty.com.google.common.annotations.VisibleForTesting;
-import org.apache.ratis.thirdparty.com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.InvalidProtocolBufferException;
 import org.apache.ratis.util.CodeInjectionForTesting;
 import org.apache.ratis.util.CollectionUtils;
 import org.apache.ratis.util.ConcurrentUtils;

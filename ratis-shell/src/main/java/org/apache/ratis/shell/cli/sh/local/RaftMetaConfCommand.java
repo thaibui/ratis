@@ -27,7 +27,7 @@ import org.apache.ratis.proto.RaftProtos.RaftPeerRole;
 import org.apache.ratis.shell.cli.RaftUtils;
 import org.apache.ratis.shell.cli.sh.command.AbstractCommand;
 import org.apache.ratis.shell.cli.sh.command.Context;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 
 import java.io.IOException;
 import java.io.InputStream;

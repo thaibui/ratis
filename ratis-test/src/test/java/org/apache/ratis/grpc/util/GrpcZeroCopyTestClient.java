@@ -23,11 +23,11 @@ import org.apache.ratis.test.proto.GreeterGrpc;
 import org.apache.ratis.test.proto.GreeterGrpc.GreeterStub;
 import org.apache.ratis.test.proto.HelloReply;
 import org.apache.ratis.test.proto.HelloRequest;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
-import org.apache.ratis.thirdparty.com.google.protobuf.UnsafeByteOperations;
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannel;
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannelBuilder;
-import org.apache.ratis.thirdparty.io.grpc.stub.StreamObserver;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.UnsafeByteOperations;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
+import io.grpc.stub.StreamObserver;
 import org.apache.ratis.util.IOUtils;
 import org.apache.ratis.util.Preconditions;
 import org.slf4j.Logger;
@@ -121,7 +121,7 @@ class GrpcZeroCopyTestClient implements Closeable {
   public void close() throws IOException {
     try {
       /* After the request handler is cancelled, no more life-cycle hooks are allowed,
-       * see {@link org.apache.ratis.thirdparty.io.grpc.ClientCall.Listener#cancel(String, Throwable)} */
+       * see {@link io.grpc.ClientCall.Listener#cancel(String, Throwable)} */
       // requestHandler.onCompleted();
       channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     } catch (InterruptedException e) {

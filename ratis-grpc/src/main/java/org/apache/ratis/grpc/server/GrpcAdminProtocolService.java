@@ -28,7 +28,7 @@ import org.apache.ratis.protocol.LeaderElectionManagementRequest;
 import org.apache.ratis.protocol.SetConfigurationRequest;
 import org.apache.ratis.protocol.SnapshotManagementRequest;
 import org.apache.ratis.protocol.TransferLeadershipRequest;
-import org.apache.ratis.thirdparty.io.grpc.stub.StreamObserver;
+import io.grpc.stub.StreamObserver;
 import org.apache.ratis.proto.RaftProtos.RaftClientReplyProto;
 import org.apache.ratis.proto.RaftProtos.GroupManagementRequestProto;
 import org.apache.ratis.proto.grpc.AdminProtocolServiceGrpc.AdminProtocolServiceImplBase;

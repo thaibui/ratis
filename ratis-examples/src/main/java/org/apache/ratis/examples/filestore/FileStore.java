@@ -27,7 +27,7 @@ import org.apache.ratis.proto.ExamplesProtos.WriteReplyProto;
 import org.apache.ratis.protocol.RaftPeerId;
 import org.apache.ratis.statemachine.StateMachine;
 import org.apache.ratis.statemachine.StateMachine.DataStream;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.CollectionUtils;
 import org.apache.ratis.util.FileUtils;
 import org.apache.ratis.util.JavaUtils;

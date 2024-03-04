@@ -17,10 +17,10 @@
  */
 package org.apache.ratis.grpc.metrics.intercept.client;
 
-import org.apache.ratis.thirdparty.io.grpc.ClientCall;
-import org.apache.ratis.thirdparty.io.grpc.ForwardingClientCallListener;
-import org.apache.ratis.thirdparty.io.grpc.Metadata;
-import org.apache.ratis.thirdparty.io.grpc.Status;
+import io.grpc.ClientCall;
+import io.grpc.ForwardingClientCallListener;
+import io.grpc.Metadata;
+import io.grpc.Status;
 import org.apache.ratis.grpc.metrics.MessageMetrics;
 
 public class MetricClientCallListener<S> extends ForwardingClientCallListener<S> {

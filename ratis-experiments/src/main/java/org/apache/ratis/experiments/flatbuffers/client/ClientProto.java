@@ -21,13 +21,13 @@ package org.apache.ratis.experiments.flatbuffers.client;
 import org.apache.ratis.proto.ExperimentsProtos.TransferReplyProto;
 import org.apache.ratis.proto.ExperimentsProtos.TransferMsgProto;
 
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannel;
-import org.apache.ratis.thirdparty.io.grpc.ManagedChannelBuilder;
-import org.apache.ratis.thirdparty.io.grpc.Status;
-import org.apache.ratis.thirdparty.io.grpc.stub.StreamObserver;
-import org.apache.ratis.thirdparty.io.grpc.Channel;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
+import io.grpc.Status;
+import io.grpc.stub.StreamObserver;
+import io.grpc.Channel;
 import org.apache.ratis.proto.FileTransferExampleServiceGrpc;
-import org.apache.ratis.thirdparty.com.google.protobuf.UnsafeByteOperations;
+import com.google.protobuf.UnsafeByteOperations;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;

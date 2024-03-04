@@ -26,7 +26,7 @@ import org.apache.ratis.server.raftlog.LogProtoUtils;
 import org.apache.ratis.server.raftlog.RaftLog;
 import org.apache.ratis.server.storage.RaftStorage;
 import org.apache.ratis.server.storage.RaftStorageTestUtils;
-import org.apache.ratis.thirdparty.com.google.protobuf.CodedOutputStream;
+import com.google.protobuf.CodedOutputStream;
 import org.apache.ratis.proto.RaftProtos.LogEntryProto;
 import org.apache.ratis.util.FileUtils;
 import org.junit.jupiter.api.AfterEach;

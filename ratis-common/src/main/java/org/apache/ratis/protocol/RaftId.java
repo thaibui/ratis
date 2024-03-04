@@ -19,8 +19,8 @@ package org.apache.ratis.protocol;
 
 import org.apache.ratis.thirdparty.com.google.common.cache.Cache;
 import org.apache.ratis.thirdparty.com.google.common.cache.CacheBuilder;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
-import org.apache.ratis.thirdparty.com.google.protobuf.UnsafeByteOperations;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.UnsafeByteOperations;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.Preconditions;
 

@@ -23,7 +23,7 @@ import org.apache.ratis.io.StandardWriteOption;
 import org.apache.ratis.proto.RaftProtos;
 import org.apache.ratis.protocol.DataStreamReply;
 import org.apache.ratis.protocol.RoutingTable;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import io.netty.util.internal.ThreadLocalRandom;
 import org.apache.ratis.util.Preconditions;
 import org.apache.ratis.util.SizeInBytes;

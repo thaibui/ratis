@@ -17,8 +17,8 @@
  */
 package org.apache.ratis.protocol;
 
-import org.apache.ratis.thirdparty.com.google.protobuf.AbstractMessage;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.AbstractMessage;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.MemoizedSupplier;
 import org.apache.ratis.util.StringUtils;
 

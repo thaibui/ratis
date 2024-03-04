@@ -18,9 +18,9 @@
 
 package org.apache.ratis.experiments.flatbuffers.server;
 
-import org.apache.ratis.thirdparty.io.grpc.BindableService;
-import org.apache.ratis.thirdparty.io.grpc.ServerBuilder;
-import org.apache.ratis.thirdparty.io.grpc.Server;
+import io.grpc.BindableService;
+import io.grpc.ServerBuilder;
+import io.grpc.Server;
 
 public final class ServerFlat {
   private ServerFlat(){

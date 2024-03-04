@@ -19,8 +19,8 @@ package org.apache.ratis.server.storage;
 
 import org.apache.ratis.io.MD5Hash;
 import org.apache.ratis.proto.RaftProtos.FileChunkProto;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
-import org.apache.ratis.thirdparty.com.google.protobuf.UnsafeByteOperations;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.UnsafeByteOperations;
 import org.apache.ratis.util.FileUtils;
 import org.apache.ratis.util.IOUtils;
 import org.apache.ratis.util.JavaUtils;

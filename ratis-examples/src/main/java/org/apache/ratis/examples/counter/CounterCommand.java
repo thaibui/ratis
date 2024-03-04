@@ -18,7 +18,7 @@
 package org.apache.ratis.examples.counter;
 
 import org.apache.ratis.protocol.Message;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 
 /**
  * The supported commands the Counter example.

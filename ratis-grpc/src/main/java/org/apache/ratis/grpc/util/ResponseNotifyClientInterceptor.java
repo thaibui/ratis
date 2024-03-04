@@ -17,14 +17,14 @@
  */
 package org.apache.ratis.grpc.util;
 
-import org.apache.ratis.thirdparty.io.grpc.CallOptions;
-import org.apache.ratis.thirdparty.io.grpc.Channel;
-import org.apache.ratis.thirdparty.io.grpc.ClientCall;
-import org.apache.ratis.thirdparty.io.grpc.ClientInterceptor;
-import org.apache.ratis.thirdparty.io.grpc.ForwardingClientCall;
-import org.apache.ratis.thirdparty.io.grpc.ForwardingClientCallListener;
-import org.apache.ratis.thirdparty.io.grpc.Metadata;
-import org.apache.ratis.thirdparty.io.grpc.MethodDescriptor;
+import io.grpc.CallOptions;
+import io.grpc.Channel;
+import io.grpc.ClientCall;
+import io.grpc.ClientInterceptor;
+import io.grpc.ForwardingClientCall;
+import io.grpc.ForwardingClientCallListener;
+import io.grpc.Metadata;
+import io.grpc.MethodDescriptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

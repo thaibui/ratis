@@ -18,9 +18,9 @@
 
 package org.apache.ratis.grpc.metrics.intercept.client;
 
-import org.apache.ratis.thirdparty.io.grpc.ClientCall;
-import org.apache.ratis.thirdparty.io.grpc.ForwardingClientCall;
-import org.apache.ratis.thirdparty.io.grpc.Metadata;
+import io.grpc.ClientCall;
+import io.grpc.ForwardingClientCall;
+import io.grpc.Metadata;
 import org.apache.ratis.grpc.metrics.MessageMetrics;
 
 public class MetricClientCall<R, S> extends ForwardingClientCall.SimpleForwardingClientCall<R, S> {

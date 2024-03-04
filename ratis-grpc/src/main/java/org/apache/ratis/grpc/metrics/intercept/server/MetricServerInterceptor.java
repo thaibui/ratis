@@ -19,12 +19,12 @@
 package org.apache.ratis.grpc.metrics.intercept.server;
 
 import org.apache.ratis.protocol.RaftPeerId;
-import org.apache.ratis.thirdparty.io.grpc.Metadata;
-import org.apache.ratis.thirdparty.io.grpc.MethodDescriptor;
-import org.apache.ratis.thirdparty.io.grpc.ServerCall;
-import org.apache.ratis.thirdparty.io.grpc.ServerCallHandler;
+import io.grpc.Metadata;
+import io.grpc.MethodDescriptor;
+import io.grpc.ServerCall;
+import io.grpc.ServerCallHandler;
 import org.apache.ratis.grpc.metrics.MessageMetrics;
-import org.apache.ratis.thirdparty.io.grpc.ServerInterceptor;
+import io.grpc.ServerInterceptor;
 
 import java.io.Closeable;
 import java.util.function.Supplier;

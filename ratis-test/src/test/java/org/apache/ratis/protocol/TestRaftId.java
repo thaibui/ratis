@@ -18,7 +18,7 @@
 package org.apache.ratis.protocol;
 
 import org.apache.ratis.BaseTest;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;

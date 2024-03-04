@@ -32,7 +32,7 @@ import org.apache.ratis.protocol.DataStreamPacketHeader;
 import org.apache.ratis.protocol.DataStreamReplyHeader;
 import org.apache.ratis.protocol.DataStreamRequest;
 import org.apache.ratis.protocol.DataStreamRequestHeader;
-import org.apache.ratis.thirdparty.com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.InvalidProtocolBufferException;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.buffer.Unpooled;

@@ -56,7 +56,7 @@ import org.apache.ratis.server.impl.RaftServerTestUtil;
 import org.apache.ratis.server.metrics.RaftServerMetricsImpl;
 import org.apache.ratis.statemachine.impl.SimpleStateMachine4Testing;
 import org.apache.ratis.statemachine.StateMachine;
-import org.apache.ratis.thirdparty.com.google.protobuf.ByteString;
+import com.google.protobuf.ByteString;
 import org.apache.ratis.util.Slf4jUtils;
 import org.apache.ratis.util.ProtoUtils;
 import org.apache.ratis.util.SizeInBytes;
