@@ -19,9 +19,9 @@
 package org.apache.ratis.experiments.nettyzerocopy.decoders;
 
 import org.apache.ratis.experiments.nettyzerocopy.objects.RequestData;
-import org.apache.ratis.thirdparty.io.netty.buffer.ByteBuf;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelHandlerContext;
-import org.apache.ratis.thirdparty.io.netty.handler.codec.ByteToMessageDecoder;
+import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.ByteToMessageDecoder;
 import java.util.List;
 
 /**

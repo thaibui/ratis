@@ -30,7 +30,7 @@ import org.apache.ratis.server.leader.LogAppender;
 import org.apache.ratis.server.ServerFactory;
 import org.apache.ratis.server.leader.FollowerInfo;
 import org.apache.ratis.server.leader.LeaderState;
-import org.apache.ratis.thirdparty.io.netty.buffer.PooledByteBufAllocator;
+import io.netty.buffer.PooledByteBufAllocator;
 import org.apache.ratis.util.JavaUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,10 +42,10 @@ public class GrpcFactory implements ServerFactory, ClientFactory {
   public static final Logger LOG = LoggerFactory.getLogger(GrpcFactory.class);
 
   static final String USE_CACHE_FOR_ALL_THREADS_NAME = "useCacheForAllThreads";
-  static final String USE_CACHE_FOR_ALL_THREADS_KEY = "org.apache.ratis.thirdparty.io.netty.allocator."
+  static final String USE_CACHE_FOR_ALL_THREADS_KEY = "io.netty.allocator."
       + USE_CACHE_FOR_ALL_THREADS_NAME;
   static {
-    // see org.apache.ratis.thirdparty.io.netty.buffer.PooledByteBufAllocator.DEFAULT_USE_CACHE_FOR_ALL_THREADS
+    // see io.netty.buffer.PooledByteBufAllocator.DEFAULT_USE_CACHE_FOR_ALL_THREADS
     final String value = JavaUtils.getSystemProperty(USE_CACHE_FOR_ALL_THREADS_KEY);
     if (value == null) {
       // Set the property to false, when it is not set.

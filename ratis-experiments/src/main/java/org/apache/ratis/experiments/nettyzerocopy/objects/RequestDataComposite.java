@@ -18,7 +18,7 @@
 
 package org.apache.ratis.experiments.nettyzerocopy.objects;
 
-import org.apache.ratis.thirdparty.io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBuf;
 
 public class RequestDataComposite {
   private int dataId;

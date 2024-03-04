@@ -22,7 +22,7 @@ import org.apache.ratis.proto.RaftProtos.DataStreamPacketHeaderProto.Type;
 import org.apache.ratis.protocol.ClientInvocationId;
 import org.apache.ratis.protocol.DataStreamPacket;
 import org.apache.ratis.protocol.DataStreamReply;
-import org.apache.ratis.thirdparty.io.netty.util.concurrent.ScheduledFuture;
+import io.netty.util.concurrent.ScheduledFuture;
 import org.apache.ratis.util.MemoizedSupplier;
 import org.apache.ratis.util.Preconditions;
 import org.slf4j.Logger;

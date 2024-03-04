@@ -22,11 +22,11 @@ import org.apache.ratis.experiments.nettyzerocopy.decoders.RequestDecoderComposi
 import org.apache.ratis.experiments.nettyzerocopy.encoders.ResponseEncoder;
 import org.apache.ratis.experiments.nettyzerocopy.objects.RequestDataComposite;
 import org.apache.ratis.experiments.nettyzerocopy.objects.ResponseData;
-import org.apache.ratis.thirdparty.io.netty.bootstrap.ServerBootstrap;
-import org.apache.ratis.thirdparty.io.netty.channel.*;
-import org.apache.ratis.thirdparty.io.netty.channel.nio.NioEventLoopGroup;
-import org.apache.ratis.thirdparty.io.netty.channel.socket.SocketChannel;
-import org.apache.ratis.thirdparty.io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.*;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
  * A server program that handles messages from Client

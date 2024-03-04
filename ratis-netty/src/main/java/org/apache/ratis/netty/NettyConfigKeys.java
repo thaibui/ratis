@@ -21,7 +21,7 @@ import org.apache.ratis.conf.ConfUtils;
 import org.apache.ratis.conf.Parameters;
 import org.apache.ratis.conf.RaftProperties;
 import org.apache.ratis.security.TlsConf;
-import org.apache.ratis.thirdparty.io.netty.util.NettyRuntime;
+import io.netty.util.NettyRuntime;
 import org.apache.ratis.util.TimeDuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

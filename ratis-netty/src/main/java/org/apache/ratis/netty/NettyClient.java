@@ -17,14 +17,14 @@
  */
 package org.apache.ratis.netty;
 
-import org.apache.ratis.thirdparty.io.netty.bootstrap.Bootstrap;
-import org.apache.ratis.thirdparty.io.netty.channel.Channel;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelFuture;
-import org.apache.ratis.thirdparty.io.netty.channel.ChannelInitializer;
-import org.apache.ratis.thirdparty.io.netty.channel.EventLoopGroup;
-import org.apache.ratis.thirdparty.io.netty.channel.socket.SocketChannel;
-import org.apache.ratis.thirdparty.io.netty.handler.logging.LogLevel;
-import org.apache.ratis.thirdparty.io.netty.handler.logging.LoggingHandler;
+import io.netty.bootstrap.Bootstrap;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.EventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.handler.logging.LogLevel;
+import io.netty.handler.logging.LoggingHandler;
 import org.apache.ratis.util.JavaUtils;
 import org.apache.ratis.util.LifeCycle;
 import org.apache.ratis.util.NetUtils;

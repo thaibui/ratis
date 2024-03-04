@@ -23,7 +23,7 @@ import org.apache.ratis.test.proto.HelloRequest;
 import org.apache.ratis.thirdparty.io.grpc.Server;
 import org.apache.ratis.thirdparty.io.grpc.ServerBuilder;
 import org.apache.ratis.thirdparty.io.grpc.stub.StreamObserver;
-import org.apache.ratis.thirdparty.io.netty.util.concurrent.ThreadPerTaskExecutor;
+import io.netty.util.concurrent.ThreadPerTaskExecutor;
 import org.apache.ratis.util.Daemon;
 import org.apache.ratis.util.IOUtils;
 import org.apache.ratis.util.TimeDuration;

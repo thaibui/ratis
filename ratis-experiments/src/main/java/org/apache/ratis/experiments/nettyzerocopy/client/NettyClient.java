@@ -22,11 +22,11 @@ import org.apache.ratis.experiments.nettyzerocopy.objects.RequestData;
 import org.apache.ratis.experiments.nettyzerocopy.encoders.RequestEncoder;
 import org.apache.ratis.experiments.nettyzerocopy.objects.ResponseData;
 import org.apache.ratis.experiments.nettyzerocopy.decoders.ResponseDecoder;
-import org.apache.ratis.thirdparty.io.netty.bootstrap.Bootstrap;
-import org.apache.ratis.thirdparty.io.netty.channel.*;
-import org.apache.ratis.thirdparty.io.netty.channel.nio.NioEventLoopGroup;
-import org.apache.ratis.thirdparty.io.netty.channel.socket.SocketChannel;
-import org.apache.ratis.thirdparty.io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.bootstrap.Bootstrap;
+import io.netty.channel.*;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioSocketChannel;
 
 import java.nio.ByteBuffer;
 

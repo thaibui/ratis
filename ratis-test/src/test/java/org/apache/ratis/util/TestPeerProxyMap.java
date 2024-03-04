@@ -83,7 +83,7 @@ public class TestPeerProxyMap extends BaseTest {
     t.join();
   }
 
-  /** Copied from {@link org.apache.ratis.thirdparty.io.netty.channel.AbstractChannel}. */
+  /** Copied from {@link io.netty.channel.AbstractChannel}. */
   private static final class AnnotatedConnectException extends ConnectException {
     private static final long serialVersionUID = 3901958112696433556L;
 
